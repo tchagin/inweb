@@ -41,6 +41,9 @@
                                 <td>{!! $item->shortDesc !!}</td>
                                 <td>
                                     <div class="d-flex">
+                                        <a href="{{ route('pages.show', ['id' => $item->id]) }}" target="_blank" class="btn btn-sm btn-secondary float-left mr-2">
+                                            <i class="far fa-eye"></i>
+                                        </a>
                                         <a href="{{ route('admin.pages.edit', ['page' => $item->id]) }}" class="btn btn-sm btn-info float-left mr-2">
                                             <i class="fas fa-pencil-alt"></i>
                                         </a>

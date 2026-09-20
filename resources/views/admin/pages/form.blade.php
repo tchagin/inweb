@@ -17,7 +17,7 @@
 
                     <div class="form-group">
                         <label for="">Краткое описание</label>
-                        <textarea name="shortDesc" class="form-control editor" cols="30" rows="10">{{ isset($item) ? $item->shortDesc : old("shortDesc") }}</textarea>
+                        <textarea name="shortDesc" class="form-control" cols="30" rows="6">{{ isset($item) ? $item->shortDesc : old("shortDesc") }}</textarea>
                     </div>
 
                     <div class="form-group">

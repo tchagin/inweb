@@ -19,6 +19,8 @@ Route::group(['middleware' => 'guest'], function () {
 });
 
 Route::get('/', [\App\Http\Controllers\IndexController::class, 'index'])->name('home');
+Route::get('/products/{id}', [\App\Http\Controllers\ProductController::class, 'show'])->name('products.show');
+Route::get('/pages/{id}', [\App\Http\Controllers\PageController::class, 'show'])->name('pages.show');
 
 Route::group(['prefix'=> 'admin', 'middleware' => 'auth', 'as' => 'admin.'], function (){
 //Route::group(['prefix'=> 'admin', 'as' => 'admin.'], function (){
